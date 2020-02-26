@@ -1,5 +1,5 @@
 <?php
-	$mydir = ".";
+	$mydir = '.';
 	$pages = scandir($mydir);
 
 	echo '<div class="menu">';
@@ -8,7 +8,7 @@
 		if(strpos($page, '.php')){
 			$link = $mydir.'/'.$page;
 			$safeName = str_replace('.php', '', $page);
-			echo '<a href = "'.$link.'">'.$safeName.'</a> $nbsp; $nbsp;';
+			echo '<a href="'.$link.'">'.$safeName.'</a> &nbsp; &nbsp;';
 		}
 	}
 	echo '</div>';
